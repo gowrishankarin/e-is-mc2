@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Understanding Einstein - The Special Theory of Relativity</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css/layout.css" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+
+<body class="body">
+	<header class="mainHeader">
+		
+		<nav><ul>
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contact</a></li>			
+		</ul></nav>
+
+	</header>
+
+	<div class="mainContent">
+		<div class="content">
+			<article class="topContent">
+				<header>
+					<h2><a href="#" title="first post">First Post</a></h2>
+				</header>
+
+				<footer>
+					<p class="post-info">Tjos post is written by Christian</p>
+				</footer>
+
+				<content>
+					<div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+
+				</content>	
+			</article>
+
+			<article class="bottomContent">
+				<header>
+					<h2><a href="#" title="first post">Second Post</a></h2>
+				</header>
+
+				<footer>
+					<p class="post-info">Tjos post is written by Christian</p>
+				</footer>
+
+				<content>
+					"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</content>	
+			</article>
+		</div>
+
+	</div>
+
+	<aside class="top-sidebar">
+		<article>
+			<h2>Top sidbar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+		</article>
+	</aside>
+
+	<aside class="middle-sidebar">
+		<article>
+			<h2>Middle sidbar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+		</article>
+	</aside>
+
+
+	<aside class="bottom-sidebar">
+		<article>
+			<h2>Bottom sidbar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+		</article>
+	</aside>
+
+
+	<footer class="mainFooter">
+		<p>Copyright &copy: <a href="#" title="tribe21">tribe21.com</a></p>
+	</footer>
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+
+	<script type="text/javascript">
+		$(function () {
+	        $('#container').highcharts({
+	            chart: {
+	                type: 'line',
+	                marginRight: 130,
+	                marginBottom: 35
+	            },
+	            title: {
+	                text: 'Monthly Average Temperature',
+	                x: -20 //center
+	            },
+	            subtitle: {
+	                text: 'Source: WorldClimate.com',
+	                x: -20
+	            },
+	            xAxis: {
+	                title: {
+	                    text: 'Distance (Light Year)'
+	                },
+	                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+	                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+	            },
+	            yAxis: {
+	                title: {
+	                    text: 'Time (Year)'
+	                },
+	                plotLines: [{
+	                    value: 0,
+	                    width: 1,
+	                    color: '#808080'
+	                }]
+	            },
+	            tooltip: {
+	                valueSuffix: '°C'
+	            },
+	            legend: {
+	                layout: 'vertical',
+	                align: 'right',
+	                verticalAlign: 'top',
+	                x: -10,
+	                y: 100,
+	                borderWidth: 0
+	            },
+	            series: [{
+	                name: 'Tokyo',
+	                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+	            }, {
+	                name: 'New York',
+	                data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+	            }, {
+	                name: 'Berlin',
+	                data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+	            }, {
+	                name: 'London',
+	                data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+	            }]
+	        });
+	    });
+
+	</script>
+
+</body>
+
+
+
+</html>
