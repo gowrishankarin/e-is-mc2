@@ -11,6 +11,6 @@ run lambda { |env|
       'Content-Type'  => 'text/html',
       'Cache-Control' => 'public, max-age=86400'
     },
-    File.open('Coursera-Dashboard.html', File::RDONLY)
+    File.open('home.html', File::RDONLY)
   ]
 }
